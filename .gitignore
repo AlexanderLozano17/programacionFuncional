@@ -22,3 +22,29 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Archivos y carpetas de Eclipse
+/.classpath
+/.project
+/.settings/
+/.metadata/
+/bin/
+/target/
+
+# Archivos de Maven y Gradle
+/.mvn/
+/.m2/
+/.gradle/
+/build/
+
+# Configuración del sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+/.idea/
+/.vscode/
+
+# Archivos temporales
+*.tmp
+*.swp
