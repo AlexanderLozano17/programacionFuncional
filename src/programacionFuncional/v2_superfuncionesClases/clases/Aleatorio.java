@@ -9,7 +9,7 @@ public class Aleatorio implements Proveedor {
 	@Override
 	public Integer obtener() {
 		Random random = new Random();
-		return random.nextInt(1000);
+		return random.nextInt(10);
 	}
 
 }

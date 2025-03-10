@@ -3,7 +3,9 @@ package programacionFuncional.v2_superfuncionesClases;
 import java.util.ArrayList;
 import java.util.List;
 
+import programacionFuncional.v2_superfuncionesClases.interfaces.Consumidor;
 import programacionFuncional.v2_superfuncionesClases.interfaces.Funcion;
+import programacionFuncional.v2_superfuncionesClases.interfaces.FuncionBinaria;
 import programacionFuncional.v2_superfuncionesClases.interfaces.Predicado;
 import programacionFuncional.v2_superfuncionesClases.interfaces.Proveedor;
 
@@ -33,5 +35,30 @@ public class SuperFunciones {
 			resultado.add(funcion.aplicar(valor));
 		}
 		return resultado;
+	}
+	
+	public static List<Integer> actuar(List<Integer> valores, Consumidor consumidor) {
+		for (int valor : valores) {
+			consumidor.actuar(valor);
+		}
+		return valores;
+	}
+	
+	public static void consumir(List<Integer> valores, Consumidor consumidor) {
+		for (int valor : valores) {
+			consumidor.actuar(valor);
+		}
+	}
+	
+	public static void consumir(int valor, Consumidor consumidor) {
+		consumidor.actuar(valor);
+	}
+	
+	public static int reducir(List<Integer> valores, int identidad, FuncionBinaria funcionBinaria) {
+		int total = identidad;
+		for (int valor : valores) {
+			total = funcionBinaria.aplicar(total, valor);
+		}
+		return total;
 	}
 }
