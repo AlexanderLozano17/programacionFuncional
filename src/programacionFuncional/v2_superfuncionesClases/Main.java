@@ -1,21 +1,26 @@
 package programacionFuncional.v2_superfuncionesClases;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Scanner;
 
 import programacionFuncional.v2_superfuncionesClases.clases.AlCubo;
 import programacionFuncional.v2_superfuncionesClases.clases.Aleatorio;
 import programacionFuncional.v2_superfuncionesClases.clases.Impresor;
 import programacionFuncional.v2_superfuncionesClases.clases.Multiplicador;
-import programacionFuncional.v2_superfuncionesClases.clases.Naturales;
 import programacionFuncional.v2_superfuncionesClases.clases.SoloImpares;
-import programacionFuncional.v2_superfuncionesClases.clases.Sumador;
-import programacionFuncional.v2_superfuncionesClases.interfaces.Consumidor;
 
 public class Main {
 
-	public static void main(String[] args) {
-						
+	public static void main(String[] args) {			
+
+		programacionFuncional();
+
+	}
+	
+	public static void programacionFuncional() {
 		// 1. Crear una lista de numeros
 		List<Integer> lista = SuperFunciones.proveer(10, new Aleatorio());
 		// 2. Mostrar la lista de numeros
@@ -32,6 +37,5 @@ public class Main {
 		//int total = SuperFunciones.reducir(listaAlCuadrado, 0, new Sumador());
 		int total = SuperFunciones.reducir(listaAlCuadrado, 1, new Multiplicador());
 		System.out.println("Reducción: " + total);
-
 	}
 }
