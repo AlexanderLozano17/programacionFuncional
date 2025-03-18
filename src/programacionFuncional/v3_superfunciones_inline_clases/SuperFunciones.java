@@ -3,6 +3,12 @@ package programacionFuncional.v3_superfunciones_inline_clases;
 import java.util.ArrayList;
 import java.util.List;
 
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Consumidor;
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Funcion;
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.FuncionBinaria;
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Predicado;
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Proveedor;
+
 public class SuperFunciones {
 
 	public static List<Integer> filtrar(List<Integer> valores, Predicado predicado) {

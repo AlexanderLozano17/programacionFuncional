@@ -1,4 +1,4 @@
-package programacionFuncional.v3_superfunciones_inline_clases;
+package programacionFuncional.v3_superfunciones_inline_clases.interfaces;
 
 public interface FuncionBinaria {
 	

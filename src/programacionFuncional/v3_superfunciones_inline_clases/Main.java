@@ -3,6 +3,12 @@ package programacionFuncional.v3_superfunciones_inline_clases;
 import java.util.List;
 import java.util.Random;
 
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Consumidor;
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Funcion;
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.FuncionBinaria;
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Predicado;
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Proveedor;
+
 public class Main {
 
 	public static void main(String[] args) {			
