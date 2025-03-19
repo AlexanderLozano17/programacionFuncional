@@ -1,5 +1,6 @@
 package programacionFuncional.v3_superfunciones_inline_clases;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -11,8 +12,15 @@ import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Proveedo
 
 public class Main {
 
-	public static void main(String[] args) {			
-
+	public static void main(String[] args) {	
+		
+		// Ejecución de una lamda
+		List<String> listaNombres = Arrays.asList("Carlos", "Ana", "Pedro", "María", "Andrés");
+		List<String> resultado = SuperFunciones.filtarConFunctionArrow(listaNombres, nombre -> nombre.startsWith("M"));
+		System.out.println(resultado);
+		
+		
+		
 		programacionFuncional();
 
 	}

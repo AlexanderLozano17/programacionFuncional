@@ -7,6 +7,7 @@ import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Consumid
 import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Funcion;
 import programacionFuncional.v3_superfunciones_inline_clases.interfaces.FuncionBinaria;
 import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Predicado;
+import programacionFuncional.v3_superfunciones_inline_clases.interfaces.PredicadoTest;
 import programacionFuncional.v3_superfunciones_inline_clases.interfaces.Proveedor;
 
 public class SuperFunciones {
@@ -60,5 +61,15 @@ public class SuperFunciones {
 			total = funcionBinaria.aplicar(total, valor);
 		}
 		return total;
+	}
+	
+	public static List<String> filtarConFunctionArrow(List<String> valores, PredicadoTest predicadoTest) {
+		List<String> resultado = new ArrayList<>();
+		for (String valor : valores) {
+			if (predicadoTest.test(valor)) {
+				resultado.add(valor);
+			}
+		}
+		return resultado;
 	}
 }
