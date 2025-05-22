@@ -1,8 +1,13 @@
 package programacionFuncional.v4_superfunciones_genericas;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import programacionFuncional.v4_superfunciones_genericas.interfaces.Consumidor;
 import programacionFuncional.v4_superfunciones_genericas.interfaces.OperadorUnario;
@@ -13,7 +18,7 @@ import programacionFuncional.v4_superfunciones_genericas.interfaces.Proveedor;
 public class Main {
 
 	public static void main(String[] args) {	 
-
+		
 		programacionFuncional();
 
 	}

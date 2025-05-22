@@ -22,7 +22,9 @@ public class Main {
 
 	}
 		
-	public static List<Integer> crearLista() {return List.of(0, 1, 2, 3, 5, 8, 13, 23, 35, 55, 89, 144); }
+	public static List<Integer> crearLista() {
+		return List.of(0, 1, 2, 3, 5, 8, 13, 23, 35, 55, 89, 144); 
+	}
 
 	public static List<Integer> filtrarPares(List<Integer> lista) {
 		List<Integer> listaPares = new ArrayList<>();

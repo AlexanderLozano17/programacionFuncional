@@ -5,6 +5,10 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 import programacionFuncional.v2_superfuncionesClases.clases.AlCubo;
 import programacionFuncional.v2_superfuncionesClases.clases.Aleatorio;
@@ -14,8 +18,34 @@ import programacionFuncional.v2_superfuncionesClases.clases.SoloImpares;
 
 public class Main {
 
-	public static void main(String[] args) {			
+	public static void main(String[] args) {	
+		/**
+		🧩 Resumen visual
+		Nombre	   ¿Recibe algo?	¿Devuelve algo?		¿Para qué sirve?
+		Predicado	Sí	            Sí (true/false)		Para decidir algo
+		Función		Sí				Sí (otro valor)		Para transformar cosas
+		Consumidor	Sí				No					Para usar algo (como imprimir)
+		Proveedor	No				Sí					Para dar algo sin pedir nada
+		*/
 
+		// Un predicado es una función que responde "sí" o "no" (true o false).
+		Predicate<Integer> esMayorQueDiez = numero -> numero > 10;		
+		System.out.println(esMayorQueDiez.test(5));
+		
+		// Una función toma algo y te devuelve otra cosa.
+		Function<Integer, Integer> multiplicarPorDos = numero -> numero * 2;
+		System.out.println(multiplicarPorDos.apply(5));
+		
+		// Un consumidor es una función que usa algo, pero no devuelve nada
+		Consumer<Integer> imprimirNumero = numero -> System.out.println(numero);
+		imprimirNumero.accept(24);
+		
+		//Un proveedor es una función que no necesita nada, pero te da algo.
+		Supplier<Integer> dameCinco = () -> 25;
+		System.out.println(dameCinco.get());
+		
+		
+		
 		programacionFuncional();
 
 	}
